@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid #0069d9;
+}
+
+h1 {
+    text-align: center;
+    color: #0069d9;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th {
+    text-decoration: underline;
+}
+
+.stock__name {
+    width: 60%;
+}
+
+.stock__symbol,
+.stock__price {
+    width: 20%;
+}
+
+.stock__symbol {
+    text-align: center;
+}
+
+.stock__price td {
+    text-align: right;
+}
+
+.btn__group {
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s
+}
+
+.btn--primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn--primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn--100 {
+    width: 100%;
+}

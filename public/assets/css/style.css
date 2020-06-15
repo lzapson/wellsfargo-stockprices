@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 100px;
+    padding: 90px;
     border-radius: 5px;
     background-color: #DDD;
 }
@@ -37,7 +37,7 @@
     border-radius: 0 0 5px 0;
 }
 
-.content__api {
+.content__api, .content__websocket {
     
     display: flex;
     justify-content: center;
@@ -46,24 +46,31 @@
 }
 
 .content__wrapper {
-    width: 90%;
+    width: 95%;
+    height: 90%;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    justify-content: space-between;
+    padding: 10px;
     background-color: azure;
 }
 
-h2 {
+h1, h2 {
     font-family: cursive;
     font-size: 16px;
     color: #0069d9;
     border-bottom: 1px solid #0069d9;
 }
 
+h1 {
+    text-align: center;
+    margin: 20px 100px;
+}
+
 .stock__list {
     list-style: none;
     margin: 0;
-    padding-left: 20px;
+    padding: 0 5px 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,7 +83,7 @@ h2 {
  }
 
 .stock__symbol {
-    flex-basis: 14%;
+    flex-basis: 17%;
     font-weight: bold;
 }
 
@@ -94,6 +101,17 @@ h2 {
 }
 
 
+.stock__ticker {
+    display: flex;
+}
+
+.stock__ticker .stock__price--text, .ellipses {
+    flex-basis: 15%;
+    padding-right: 10px;
+    text-align: right;
+    font-weight: bold;
+    font-style: italic;
+}
 
 
 .disclaimer,

@@ -6,34 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/scroll.css">
     <title>Stock Prices</title>
 </head>
 
 <body>
+    <h1>Sample desktop application, using Node.js, ajax and websocket technologies, implemented by Lisa Zapson</h1>
     <div class="container">
 
         <div class="container__content content__top-left"></div>
-        <div class="container__content content__top-right content__api">
 
+        <div class="container__content content__top-right content__api">
             <div class="content__wrapper">
                 <h2>Stock Prices</h2>
                 <ul class="stock__list"></ul>
-
                 <div class="disclaimer">
                     <p>implemented using static html, client-side javascript, ajax call</p>
                     <p>powered by api.tiingo.com</p>
                 </div>
-
             </div>
-
-
-
         </div>
-        <div class="container__content content__bottom-left"></div>
+
+        <div class="container__content content__bottom-left content__websocket">
+            <div class="content__wrapper">
+                <h2>Stock Prices</h2>
+                <div class="scroll-right">
+                    <p class="stock__ticker">
+                        <span class="stock__price--text">MSFT</span><span class="price__MSFT"></span>
+                        <span class="stock__price--text">AMZN</span><span class="price__AMZN"></span>
+                        <span class="stock__price--text">AAPL</span><span class="price__AAPL"></span>
+                        <span class="stock__price--text">GOOGL</span><span class="price__GOOGL"></span>
+                    </p>
+                </div>
+                <div class="disclaimer">
+                    <p>implemented using websockets</p>
+                    <p>powered by finnhub.io</p>
+                </div>
+            </div>
+        </div>
+
         <div class="container__content content__bottom-right"></div>
 
     </div>
-    <script src="js/app.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/websocket.js"></script>
 
 </body>
 
